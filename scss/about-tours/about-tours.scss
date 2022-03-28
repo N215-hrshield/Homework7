@@ -1,0 +1,102 @@
+.about-tours{
+    width: $site-width;
+.tour-hero1{
+    @include tour(url(../images/tour/tour-01.jpg));
+}
+.tour-hero2{
+    @include tour(url(../images/tour/tour-02.jpg));
+}
+.tour-hero3{
+    @include tour(url(../images/tour/tour-03.jpg));
+}
+.tour-hero4{
+    @include tour(url(../images/tour/tour-04.jpg));
+}
+.tour-hero5{
+    @include tour(url(../images/tour/tour-05.jpg));
+}
+.tour-hero6{
+    @include tour(url(../images/tour/tour-06.jpg));
+}
+.tour-hero7{
+    @include tour(url(../images/tour/tour-07.jpg));
+}
+.tour-hero8{
+    @include tour(url(../images/tour/tour-08.jpg));
+}
+.tour-hero9{
+    @include tour(url(../images/tour/tour-09.jpg));
+}
+.tourpictures{
+    height: 347px;
+    width: $site-width;
+    display: flex;
+    justify-content: space-between;
+    .tourpicture{
+        width: 298px;
+        height: 347px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.tourtext{
+    padding-bottom: 80px;
+    .tourbar{
+        width: 177px;
+        height: 1px;
+        background-color: black;
+        margin-top: -20px;
+    }
+    h1{
+        font-family: ProximaNovaThin;
+        font-size: 60px;
+    }
+    p{
+        font-family: GillSansR;
+        font-size: 16px;
+        padding-top: 40px;
+    }
+}
+.tourbtn{
+    background-color: $site-blue;
+    width: 133px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 100px;
+    color: $site-white
+}
+}
+
+@media screen and (max-width:1280px) and (min-width:800px){
+    .about-tours{
+       width: 90%;
+       margin: 0 auto;
+       .tourpictures{
+           width: 100%;
+        .tourpicture{
+        width: 30%;
+        height: 90%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+       }
+    }
+    .tourtext{
+
+        h1{
+            margin: 0 auto;
+        }
+
+    }
+    }

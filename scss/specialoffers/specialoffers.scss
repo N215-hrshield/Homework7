@@ -1,0 +1,72 @@
+.specialoffers{
+    width: $site-width;
+    h1{
+        font-family: ProximaNovaScOsfExtraCondensed;
+        font-size: 30px;
+    }
+    .specialoffersheader {
+        margin-top: 60px;
+       }
+       .specialofferstitlebar{
+        width: 159px;
+        height: 2px;
+        background-color: black;
+        margin-top: -15px;
+        margin-bottom: 30px;
+       }
+    }
+    .offers{
+        margin-bottom: 100px;
+      .specialoffers-box{
+          max-height: 287px;
+          display: flex;
+          justify-content: space-between;
+          max-width: 509px;
+          margin-bottom: 60px;
+          .specialoffers-image{
+            width: 199px;
+            height: 287px;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            img{
+                height: 100%;
+            }
+          }
+      }  
+      .specialoffers-text{
+        width: 290px;
+        position: relative;
+        .specialoffers-decription{
+            font-family: GillSansB;
+            font-size: 16px;
+        }
+        .specialoffers-texttitlebar{
+            width: 179px;
+            height: 2px;
+            background-color: black;
+            margin-top: -15px;
+            margin-bottom: 35px;
+        }
+        .specialoffers-learnmore{
+            @include site-button;
+            color: $site-white;
+            margin-right: 300px;
+        }
+        .specialoffers-discount{
+            position: absolute;
+            color: #FF7D38;
+            top: 10px;
+            right: 10px;
+            font-family: ProximaNovaScOsfExtraCondensed;
+            font-size: 20px;
+        }
+      }
+}
+@media screen and (max-width:1280px) and (min-width:800px){
+        .specialoffers{
+            margin: 0 auto;
+            width: 70%;
+        }
+    }

@@ -1,0 +1,83 @@
+.contact{
+    width: $site-width;
+    margin-bottom: 100px;
+    h1{
+        font-family: ProximaNovaScOsfExtraCondensed;
+        font-size: 30px;
+    }
+    .contact-header {
+        margin-top: 60px;
+       .contact-titlebar{
+        width: 106px;
+        height: 2px;
+        background-color: black;
+        margin-top: -15px;
+        margin-bottom: 50px;
+       }
+    }
+    .contact-box{
+        display: flex;
+        justify-content: space-between;
+        .contact-left{
+            width: 400px;
+            .contact-map{
+                height: 442px;
+                background-image: url(../../images/map.jpg);
+                background-position: center;
+            }
+            .contact-address{
+                margin-top: 34px;
+                height: 161px;
+                font-family: GillSansL;
+                font-size: 18px;
+            }
+        }
+        .contact-right{
+            width: 529px;
+            input{
+                width: 100%;
+                height: 60px;
+                margin-bottom: 21px;
+                font-size: 16px;
+                font-family: GillSansL;
+                border: none;
+                background-color: #F5F5F5;
+            }
+            textarea{
+                width: 100%;
+                height: 199px;
+                font-size: 16px;
+                font-family: GillSansL;
+                border: none;
+                background-color: #F5F5F5;
+            }
+            .sendmessage{
+                margin-top: 20px;
+                width: 167px;
+                height: 60px;
+                background-color: $site-blue;
+                color: $site-white;
+                font-family: GillSansR;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:1280px) and (min-width:800px){
+    .contact{
+        width: 80%;
+        margin: 0 auto;
+        .contact-box{
+            flex-direction: column;
+            align-items: center;
+            
+            .sendmessage{
+                margin: 0 auto;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}

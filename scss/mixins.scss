@@ -1,0 +1,54 @@
+@mixin promo($bgimage: url(../images/about-client-01.jpg)) {
+    height: 304px;
+    width: 235px;
+    background-image: linear-gradient(rgba($site-black,0.5),rgba($site-black,0.5)),$bgimage;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    color: $site-white;
+}
+@mixin site-button($cornerRadius: 25px){
+    background-color: $site-blue;
+    border-radius: $cornerRadius;
+    cursor: pointer;
+    width: 133px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 57px;
+}
+@mixin tour($bgimage: url(../images/about-client-01.jpg)) {
+    max-width: $site-width;
+    height: 413px;
+    background-image: linear-gradient(rgba($site-black,0.5),rgba($site-black,0.5)),$bgimage;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $site-white;
+    margin: 50px 0 48px 0;
+    position: relative;
+    .tour-hero-text {
+        margin: 0 auto;
+        font-size: 60px;
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .tour-heroprice{
+        font-size: 20px;
+        position: absolute;
+        font-style: italic;
+        right: 5px;
+        bottom: -20px;
+        text-align: right;
+    }
+}
